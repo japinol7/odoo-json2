@@ -1,5 +1,5 @@
 ## Odoo json-2
-    Odoo json-2 client.
+    Odoo json-2 client using 'requests' as the underlying transport.
 <br>
 
 	version: 0.0.1
@@ -9,7 +9,7 @@
 	author_twitter: @japinol
 <br>
 
-	Dependencies: None.
+	Dependencies: requests.
 	Python requires: 3.13 or greater.
     Tested against Odoo 19.0 CE.
 <br>
