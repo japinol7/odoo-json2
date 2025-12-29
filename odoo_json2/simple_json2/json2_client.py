@@ -91,7 +91,7 @@ class Json2Client:
 
         jsonrpc_client = requests.Session()
         jsonrpc_client.headers.update({
-            "Content-Type": "application/json-rpc",
+            "Content-Type": "application/json-rpc; charset=utf-8",
             "User-Agent": f"odoo-json2/{VERSION} (requests/{requests.__version__})",
             })
         jsonrpc_client.proxies = self._connection.proxies
@@ -110,7 +110,7 @@ class Json2Client:
         url = f"{self._connection._url_root_web}version"
         jsonrpc_client = requests.Session()
         jsonrpc_client.headers.update({
-            "Content-Type": "application/json",
+            "Content-Type": "application/json; charset=utf-8",
             "User-Agent": f"odoo-json2/{VERSION} (requests/{requests.__version__})",
             })
         jsonrpc_client.proxies = self._connection.proxies

@@ -62,7 +62,7 @@ class Json2Connection:
 
         headers = {
             "Authorization": f"Bearer {self.server.api_key}",
-            "Content-Type": "application/json",
+            "Content-Type": "application/json; charset=utf-8",
             "User-Agent": f"odoo-json2/{VERSION} (requests/{requests.__version__})",
             }
         if self.server.dbname:
